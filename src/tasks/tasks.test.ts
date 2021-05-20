@@ -34,5 +34,6 @@ test('calculator', () => {
     expect(calculator(2, 3, {type: 'mult'})).toBe(6)
     expect(calculator(3, 2, {type: 'div'})).toBe(1.5)
     expect(() => calculator(3, 0, {type: 'div'})).toThrow('devided by zero')
+    expect(() => calculator(3, 0, {type: 'div'})).toThrowError()
     expect(calculator(2, 3, {type: 'sub'})).toBe(-1)
 })
